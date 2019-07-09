@@ -1,0 +1,87 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny13A-SSU U1
+U 1 1 5D1FE9C8
+P 3650 3350
+F 0 "U1" H 3120 3396 50  0000 R CNN
+F 1 "ATtiny13A-SSU" H 3120 3305 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3650 3350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8126.pdf" H 3650 3350 50  0001 C CNN
+	1    3650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5D1FEA33
+P 5450 2800
+F 0 "D1" H 5442 2545 50  0000 C CNN
+F 1 "LED" H 5442 2636 50  0000 C CNN
+F 2 "LEDs:LED_0603_HandSoldering" H 5450 2800 50  0001 C CNN
+F 3 "~" H 5450 2800 50  0001 C CNN
+	1    5450 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5D1FEADB
+P 4950 2650
+F 0 "R1" V 4743 2650 50  0000 C CNN
+F 1 "R" V 4834 2650 50  0000 C CNN
+F 2 "OPL_Resistor:R0603" V 4880 2650 50  0001 C CNN
+F 3 "~" H 4950 2650 50  0001 C CNN
+	1    4950 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5D1FEB50
+P 5900 3000
+F 0 "#PWR0101" H 5900 2750 50  0001 C CNN
+F 1 "GND" H 5905 2827 50  0000 C CNN
+F 2 "" H 5900 3000 50  0001 C CNN
+F 3 "" H 5900 3000 50  0001 C CNN
+	1    5900 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3050 4250 2650
+Wire Wire Line
+	4250 2650 4800 2650
+Wire Wire Line
+	5100 2650 5300 2650
+Wire Wire Line
+	5300 2650 5300 2800
+Wire Wire Line
+	5600 2800 5900 2800
+Wire Wire Line
+	5900 2800 5900 3000
+$Comp
+L power:GND #PWR0102
+U 1 1 5D1FEB8F
+P 3750 4050
+F 0 "#PWR0102" H 3750 3800 50  0001 C CNN
+F 1 "GND" H 3755 3877 50  0000 C CNN
+F 2 "" H 3750 4050 50  0001 C CNN
+F 3 "" H 3750 4050 50  0001 C CNN
+	1    3750 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3950 3750 3950
+Wire Wire Line
+	3750 3950 3750 4050
+$EndSCHEMATC
